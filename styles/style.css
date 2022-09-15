@@ -91,3 +91,41 @@ html{
     color: white;
     font-size: x-large;
 }
+.card{
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    margin: 1%;
+    border-radius: 10px;
+}
+.card-title{
+    display: flex;
+    justify-content: start;
+    font-size: x-large;
+}
+.card-text{
+    color: black;
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+}
+.precio{
+    display: flex;
+    justify-content: end;
+    font-size: x-large;
+}
+.card-link{
+    display: flex;
+    justify-content: start;
+    font-size: x-large;
+    margin-bottom: 5%;
+}
+.card-title{
+    color: white;
+    font-size: 60px;
+}
+.card-text{
+    display: flex;
+    justify-content: left;
+    color: white;
+}
