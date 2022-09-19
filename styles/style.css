@@ -97,6 +97,10 @@ html{
     justify-content: space-around;
     margin: 1%;
     border-radius: 10px;
+    transition: padding 0.8s ease;
+}
+.card:hover{
+    padding: 3rem;
 }
 .card-title{
     display: flex;
@@ -113,19 +117,23 @@ html{
     display: flex;
     justify-content: end;
     font-size: x-large;
+    margin: 2%;
 }
 .card-link{
     display: flex;
     justify-content: start;
     font-size: x-large;
     margin-bottom: 5%;
+    margin-left: 2%;
 }
 .card-title{
-    color: white;
+    color: black;
     font-size: 60px;
+    margin-left: 2%;
 }
 .card-text{
     display: flex;
     justify-content: left;
-    color: white;
+    color: black;
+    margin: 2%;
 }
