@@ -87,7 +87,11 @@ html{
 .boton:hover{
     padding: 1rem;
 }
-.speech{
+.card-titulo{
+    color: white;
+    font-size: 350%;
+}
+.card-texto{
     color: white;
     font-size: x-large;
 }
