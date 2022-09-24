@@ -28,9 +28,18 @@
     list-style: none;
     margin: 4%;
     padding: 4px;
-color: white;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-font-size: x-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: x-large;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: gray;
 } 
 .planesDeDesarrollo{
     color: white;
@@ -73,7 +82,6 @@ html{
         flex-direction: column;
         list-style: none;
         flex: 1;
-
     }
     
 }
