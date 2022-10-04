@@ -1,0 +1,22 @@
+.footer{
+    background-color: rgb(32, 32, 32);
+    color: white;
+    font-style: unset;
+        .footer form{
+            display: inline-block;
+            margin: 5%;
+            font-size:large;
+            background-color: rgb(32, 32, 32);
+        } 
+        .footer h3{
+            display: inline-block;
+            margin: 5%;
+            font-size: x-large;
+        }
+        .footer h5{
+            display: flex;
+            justify-content: end;
+            margin-right: 1%;
+            margin-bottom: 1%;
+        }
+}

@@ -1,0 +1,23 @@
+%contacto{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    margin: 1%;
+    border-radius: 10px;
+}
+.formContacto{
+    font-size: x-large;
+    margin: 2%;
+}
+.enviar{
+    margin: 3%;
+    margin-bottom: 5%;
+    color: white;
+    background-color: map-get($map: colores, $key:colorprimario );
+    border-radius: 5px;
+    height: 5%;
+    width: 10%;
+}
+.enviar:hover{
+    background-color: map-get($map: colores, $key:colorsecundario) ;
+}

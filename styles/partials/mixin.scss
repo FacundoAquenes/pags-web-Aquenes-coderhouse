@@ -1,0 +1,11 @@
+@mixin button ($backround){
+    width: 20%;
+    height: 15%;
+    background-image: $backround;
+    font-size: large;
+    transition: padding 0.3s ease;
+}
+.boton{
+    @include button($backround: linear-gradient(to left, red, orange));
+}
+
