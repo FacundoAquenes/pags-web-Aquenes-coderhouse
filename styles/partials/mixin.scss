@@ -3,7 +3,10 @@
     height: 15%;
     background-image: $backround;
     font-size: large;
-    transition: padding 0.3s ease;
+    border-radius: 5px;
+    border: none;
+    margin-top: 2%;
+
 }
 .boton{
     @include button($backround: linear-gradient(to left, red, orange));

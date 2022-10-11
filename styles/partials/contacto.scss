@@ -16,6 +16,7 @@
     background-color: map-get($map: colores, $key:colorprimario );
     border-radius: 5px;
     height: 5%;
+    width: auto;
 }
 .enviar:hover{
     background-color: map-get($map: colores, $key:colorsecundario) ;
