@@ -1,8 +1,12 @@
+.grilla{
+    display: grid;
+    grid-template-rows: 20% 60% 20%;
+}
 .footer{
     background-color: rgb(32, 32, 32);
     color: white;
     font-style: unset;
-    
+    font-size: medium;
 }
 .footer form{
     display: inline-block;
@@ -14,7 +18,6 @@
 .footer h3{
     display: inline-block;
     margin: 5%;
-    font-size: x-large;
 }
 .footer h5{
     display: flex;
@@ -22,17 +25,25 @@
     margin-right: 1%;
     margin-bottom: 1%;
 }
+.links{
+    color: #716FD9;
+}
+.logo{
+    margin:auto;
+}
 .barraDeNavegacion li{
 
-    display: inline-block;
+    display: flex;
+    justify-content: left;
     list-style: none;
     margin: 4%;
-    padding: 4px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: x-large;
 }
 ul {
     list-style: none;
+    display: flex;
+    flex-direction: row;
+    font-size: large;
 }
 a {
     text-decoration: none;
@@ -46,7 +57,7 @@ a:hover{
 }
 
 #barra{
-background-color: black;
+background-color: rgb(0, 0, 0);
 }
 #banner{
     font-size: 2cm;
@@ -67,10 +78,12 @@ html{
     height: 15%;
     background-image: linear-gradient(to left, red, orange);
     font-size: large;
-    transition: padding 0.3s ease;
+    border-radius: 5px;
+    border: none;
+    margin-top: 2%;
 }
 .boton:hover{
-    padding: 1rem;
+    background-image: linear-gradient(to right, red, orange);
 }
 .card-titulo{
     color: white;
@@ -84,7 +97,7 @@ html{
     background-color: white;
     display: flex;
     justify-content: space-around;
-    margin: 1%;
+    margin: 5%;
     border-radius: 10px;
     transition: padding 0.8s ease;
 }
@@ -106,7 +119,7 @@ html{
     display: flex;
     justify-content: end;
     font-size: x-large;
-    margin: 2%;
+    margin: 4%;
 }
 .card-link{
     display: flex;
@@ -117,14 +130,14 @@ html{
 }
 .card-title{
     color: black;
-    font-size: 60px;
-    margin-left: 2%;
+    font-size: 40px;
+    margin-left: 4%;
 }
 .card-text{
     display: flex;
     justify-content: left;
     color: black;
-    margin: 2%;
+    margin: 4%;
 }
 .contacto{
     background-color: white;
@@ -144,25 +157,18 @@ html{
     background-color: rgb(61, 61, 228);
     border-radius: 5px;
     height: 5%;
-    width: 10%;
+    width: auto;
 }
 .enviar:hover{
     background-color: rgb(94, 94, 231) ;
 }
-.port{
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    height: 20%;
-    margin-bottom: 5%;
-    margin-left: 30%;
-    margin-right: 30%;
-    border-radius: 20px;
+.opciones{
+    color: white;
 }
 .selecciones{
     border-radius: 10px;
-    height: 2%;
-    width: 7%;
+    height: auto;
+    width: auto;
     background-color: rgb(168, 164, 164);
     font-size: medium;
     color: black;
@@ -172,35 +178,229 @@ html{
 }
 
 .card-img-top{
-    width: 50%;
+    width: 100%;
     border-radius: 10px;
 }
 .cards{
     background-color: white;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
-    margin: 1%;
+    margin: 5%;
     border-radius: 10px;
     transition: padding 0.8s ease;
 }
 .cards:hover{
     padding: 3rem;
 }
-
-
-.grilla{
-    display: grid;
-    grid-template-rows: 20% 60% 20%;
+.intro{
+    display: flex;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
 }
-@media screen and (min-widht: 300px) and (max-widht: 480px) {
+.nosotros{
+    color: white;
+    background-color: #716FD9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10%;
+    margin-bottom: 10%;
+}
+
+@media screen and (min-widht: 481px) and (max-widht: 1920px) {
     .grilla{
         grid-template-rows: 20% 60% 20%;
     }
-    .barraDeNavegacion li{ 
+
+    .footer{
+        background-color: rgb(32, 32, 32);
+        color: white;
+        font-style: unset;
+        
+    }
+    .footer form{
+        display: inline-block;
+        margin: 5%;
+        font-size:large;
+        background-color: rgb(32, 32, 32);
+    
+    }
+    .footer h3{
+        display: inline-block;
+        margin: 5%;
+        font-size: x-large;
+    }
+    .footer h5{
         display: flex;
-        flex-direction: column;
+        justify-content: end;
+        margin-right: 1%;
+        margin-bottom: 1%;
+    }
+    .barraDeNavegacion li{
+    
+        display: inline-block;
         list-style: none;
-        flex: 1;
+        margin: 4%;
+        padding: 4px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: x-large;
+    }
+    ul {
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+    }
+    a:hover{
+        color: gray;
+    } 
+    .planesDeDesarrollo{
+        color: white;
     }
     
+    #barra{
+    background-color: black;
+    }
+    #banner{
+        font-size: 2cm;
+        color: white;
+        margin-bottom: 30%;
+    }
+    .top{
+        background-color: black;
+        display: inline-block;
+    }
+    html{
+        background-color: rgb(0, 0, 0);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    .boton{
+        width: 20%;
+        height: 15%;
+        background-image: linear-gradient(to left, red, orange);
+        font-size: large;
+        transition: padding 0.3s ease;
+    }
+    .boton:hover{
+        padding: 1rem;
+    }
+    .card-titulo{
+        color: white;
+        font-size: 350%;
+    }
+    .card-texto{
+        color: white;
+        font-size: x-large;
+    }
+    .card{
+        background-color: white;
+        display: flex;
+        justify-content: space-around;
+        margin: 1%;
+        border-radius: 10px;
+        transition: padding 0.8s ease;
+    }
+    .card:hover{
+        padding: 3rem;
+    }
+    .card-title{
+        display: flex;
+        justify-content: start;
+        font-size: x-large;
+    }
+    .card-text{
+        color: black;
+        display: flex;
+        justify-content: center;
+        font-size: x-large;
+    }
+    .precio{
+        display: flex;
+        justify-content: end;
+        font-size: x-large;
+        margin: 2%;
+    }
+    .card-link{
+        display: flex;
+        justify-content: start;
+        font-size: x-large;
+        margin-bottom: 5%;
+        margin-left: 2%;
+    }
+    .card-title{
+        color: black;
+        font-size: 60px;
+        margin-left: 2%;
+    }
+    .card-text{
+        display: flex;
+        justify-content: left;
+        color: black;
+        margin: 2%;
+    }
+    .contacto{
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        margin: 1%;
+        border-radius: 10px;
+    }
+    .formContacto{
+        font-size: x-large;
+        margin: 2%;
+    }
+    .enviar{
+        margin: 3%;
+        margin-bottom: 5%;
+        color: white;
+        background-color: rgb(61, 61, 228);
+        border-radius: 5px;
+        height: 5%;
+        width: 10%;
+    }
+    .enviar:hover{
+        background-color: rgb(94, 94, 231) ;
+    }
+    .port{
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        height: 20%;
+        margin-bottom: 5%;
+        margin-left: 30%;
+        margin-right: 30%;
+        border-radius: 20px;
+    }
+    .selecciones{
+        border-radius: 10px;
+        height: 2%;
+        width: 7%;
+        background-color: rgb(168, 164, 164);
+        font-size: medium;
+        color: black;
+    }
+    .selecciones:hover{
+        background-color: rgb(94, 92, 92);
+    }
+    
+    .card-img-top{
+        width: 50%;
+        border-radius: 10px;
+    }
+    .cards{
+        background-color: white;
+        display: flex;
+        justify-content: space-around;
+        margin: 1%;
+        border-radius: 10px;
+        transition: padding 0.8s ease;
+    }
+    .cards:hover{
+        padding: 3rem;
+    }
 }
